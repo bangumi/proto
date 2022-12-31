@@ -53,9 +53,7 @@ message Episode {
   uint32 type = 2;
   string name = 3;
   string name_cn = 4;
-  string image = 5;
-  bool series = 6;
-  double sort = 7;
+  double sort = 5;
 }
 
 // The request message containing the user's name.
