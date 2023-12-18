@@ -50,10 +50,10 @@ message Subject {
 
 message Episode {
   uint32 id = 1;
-  uint32 type = 2;
-  string name = 3;
-  string name_cn = 4;
-  double sort = 5;
+  uint32 type = 2 [deprecated = true];
+  string name = 3 [deprecated = true];
+  string name_cn = 4 [deprecated = true];
+  double sort = 5 [deprecated = true];
 }
 
 // The request message containing the user's name.
