@@ -63,6 +63,7 @@ message SubjectCollectRequest {
   uint32 collection = 3;
   string comment = 4;
   uint32 rate = 5;
+  uint64 collection_id = 6;
 }
 
 // 标记剧集为看过
