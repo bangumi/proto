@@ -39,7 +39,7 @@ message EpisodeCollectResponse {
 
 message Subject {
   uint32 id = 1;
-  uint32 type = 2 [deprecated = true];
+  uint32 type = 2;
   string name = 3 [deprecated = true];
   string name_cn = 4 [deprecated = true];
   string image = 5 [deprecated = true];
