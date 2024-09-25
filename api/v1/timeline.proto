@@ -38,22 +38,16 @@ message EpisodeCollectResponse {
 }
 
 message Subject {
+  reserved 3 to 6;
   uint32 id = 1;
   uint32 type = 2;
-  string name = 3 [deprecated = true];
-  string name_cn = 4 [deprecated = true];
-  string image = 5 [deprecated = true];
-  bool series = 6 [deprecated = true];
   uint32 vols_total = 7;
   uint32 eps_total = 8;
 }
 
 message Episode {
+  reserved 2 to 5;
   uint32 id = 1;
-  uint32 type = 2 [deprecated = true];
-  string name = 3 [deprecated = true];
-  string name_cn = 4 [deprecated = true];
-  double sort = 5 [deprecated = true];
 }
 
 // The request message containing the user's name.
