@@ -22,7 +22,6 @@ message HelloRequest {
   string name = 2;
 }
 
-
 message TestMessage {
   string name = 1;
 }
