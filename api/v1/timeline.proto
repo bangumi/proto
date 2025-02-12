@@ -18,7 +18,7 @@ service TimeLineService {
 }
 
 message HelloRequest {
-  int64 name = 2;
+  int64 name = 1;
 }
 
 message HelloResponse {
