@@ -21,6 +21,11 @@ message HelloRequest {
   string name = 1;
 }
 
+
+message TestMessage {
+  string name = 1;
+}
+
 message HelloResponse {
   string message = 1;
 }
