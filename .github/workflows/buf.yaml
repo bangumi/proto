@@ -1,8 +1,8 @@
 name: Buf CI
 on:
-  push:
-    branches:
-      - master
+  # push:
+  #   branches:
+  #     - master
   pull_request:
     branches:
       - master
@@ -23,4 +23,4 @@ jobs:
       - uses: bufbuild/buf-action@v1
         with:
           github_token: ${{ github.token }}
-          breaking_against: ".git#branch=master"
+          breaking_against: ".git#sha=${{ github.event.pull_request.base.sha }}"
