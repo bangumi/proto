@@ -23,4 +23,4 @@ jobs:
       - uses: bufbuild/buf-action@v1
         with:
           github_token: ${{ github.token }}
-          breaking_against: ".git#sha=${{ github.event.pull_request.base.sha }}"
+          breaking_against: ".git#ref=${{ github.event.pull_request.base.sha }}"
