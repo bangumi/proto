@@ -1,10 +1,12 @@
-version: v1
+version: v2
 
-breaking:
-  use:
-    - FILE
-    - PACKAGE
+modules:
+  - path: mq/v1
+    breaking:
+      use:
+        - FILE
+        - PACKAGE
 
-lint:
-  use:
-    - STANDARD
+    lint:
+      use:
+        - STANDARD
