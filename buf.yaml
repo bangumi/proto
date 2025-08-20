@@ -1,7 +1,7 @@
 version: v2
 
 modules:
-  - path: mq/v1
+  - path: .
     breaking:
       use:
         - FILE
